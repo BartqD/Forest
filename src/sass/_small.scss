@@ -1,0 +1,31 @@
+@media (min-width: 576px){
+.aboutus {
+    &__box {
+        flex-direction: row;
+        justify-content: space-between;
+        &-text {
+            width: 52%;
+        }
+        &-img {
+            width: 46%;
+                  }
+    }
+    &__img {
+        margin-bottom: 0;
+        max-height: 400px;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+    }
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.1;
+    }
+
+
+}
+
+
+
+}

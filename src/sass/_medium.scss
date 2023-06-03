@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+    .home{
+            &-text {
+                margin-left: 5em;
+                
+                h1 {
+                    font-size: 3rem;
+    
+                    .forest {
+                        font-size: 2rem;
+                        
+                    }
+                }
+            }
+    
+        }
+        .aboutus {
+            &__box {
+            
+                &-text {
+                    width: 40%;
+                }
+                &-img {
+                    width: 55%;
+                          }
+            }
+            &__img {
+               
+                max-height: 350px;
+            }
+            &__title {
+                font-size: 2rem;
+            }
+            &__text {
+                font-size: 1.8rem;
+                line-height: 1.1;
+            }
+
+        }
+        .section-heading {
+            font-size: 5rem;
+        }
+
+
+
+        
+
+    }

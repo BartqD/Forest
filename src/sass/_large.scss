@@ -1,0 +1,110 @@
+@media (min-width: 992px) {
+	.container{
+		justify-content: space-around;
+		position: sticky;
+		.nav-brand {
+			font-size: 5rem;
+			.nav-brand-icon{
+				width: 50px;
+			}
+		}
+
+		.nav {
+			&-desktop {
+				display: inline-block;
+			}
+
+			&__link {
+				position: relative;
+				display: inline-block;
+				margin: 0.5em;
+				padding: 2em 1em;
+				font-size: 2rem;
+				color: c.$darker;
+				text-decoration: none;
+				font-weight: 100;
+				transition: color 0.3s;
+				&:hover {
+					color: c.$green;
+				}
+                &--active{
+                    background-color: c.$dark;
+                    color:c.$white
+                }
+			}
+		}
+		.nav-btn {
+			display: none;
+		}
+	}
+.home{
+	background-image: url('/dist/img/jungle_1920.jpg');
+	
+		&-text {
+			margin-left: 15em;
+			
+			h1 {
+				font-size: 4rem;
+
+				.forest {
+					font-size: 3rem;
+					margin-bottom: .2em;
+					
+				}
+			}
+		}
+
+	}
+
+.aboutus{
+	&__box {
+			&-text {
+				width: 100%;
+			}
+			&-img {
+				width: 100%;
+				margin-right: 4em;
+					  }
+		}
+		&__img {
+			max-height: 500px;
+		}
+		&__title {
+			font-size: 2.2rem;
+		}
+		&__text {
+			font-size: 2rem;
+			line-height: 1.5;
+		}
+		&-hero{
+			background-image: url('/dist/img/girl_1920.jpg');
+			height: 50vh;
+			.hero-text {
+				padding: 1em 5em;
+				font-size: 4rem;
+				border: 1px solid c.$white;
+			}
+		}
+	}
+
+	.section-heading {
+		
+		margin-bottom: 1.5em;
+		font-size: 5rem;
+		font-weight: 300;
+	
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
