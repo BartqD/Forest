@@ -2,104 +2,82 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/style.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cde9c5fd4f.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+  <title>Forest Group</title>
 </head>
 
 <body>
-    
-    <section class="contact" id="contact">
-        <div class="wrapper">
-            <h2 class="section-title">contact <span>us</span></h2>
-            <form action="" class="contact__form">
-                <div class="contact__form-box">
-                    <label for="name">Your name:</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="contact__form-box">
-                    <label for="email">Your email:</label>
-                    <input type="email" id="email">
-                </div>
-                <div class="contact__form-box">
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit" class="contact__form-btn">Send</button>
-
-            </form>
-
+  <!-- @include 'navContact.kit' -->
+  <section id="contact" class="contact">
+    <div class="contact-shadow"></div>
+    <div class="content wrapper section-padding">
+      <h2 class="section-heading">Kontakt</h2>
+      <div class="contact__boxes">
+        <div class="contact__box-left">
+          <div class="contact__box-left-adress">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="contact__box-left-adress-topic ">Adres</div>
+            <div class="contact__box-left-adress-text">Warszawa </div>
+            <div class="contact__box-left-adress-text">ul. Warszawska 1</div>
+            <div class="contact__box-left-adress-text">00-000 Warszawa</div>
+          </div>
+          <div class="contact__box-left-adress">
+            <i class="fas fa-phone-alt"></i>
+            <div class="contact__box-left-adress-topic">Telefon</div>
+            <div class="contact__box-left-adress-text">+48 999 999 999</div>
+            <div class="contact__box-left-adress-text">+48 888 888 888</div>
+          </div>
+          <div class="contact__box-left-adress">
+            <i class="fas fa-envelope"></i>
+            <div class="contact__box-left-adress-topic">Email</div>
+            <div class="contact__box-left-adress-text">mail@gmail.com</div>
+            <div class="contact__box-left-adress-text">info@gmail.com</div>
+          </div>
         </div>
-
-
-    </section>
-
-    <section class="contact section section-padding white-section " id="contact">
-        <div class="white-block white-block-left"></div>
-        <div class="white-block white-block-right"></div>
-        <h2 class="section-heading">Kontakt</h2>
-        <div class="wrapper">
-            <form class="contact__form">
-                <div class="contact__form-top">
-                    <label for="name" class="contact__form-label">Imię i nazwisko:</label>
-                    <input type="text" class="contact__form-input" id="name">
-                    <label for="email" class="contact__form-label">Adres e-mail:</label>
-                    <input type="text" class="contact__form-input" id="email">
-                </div>
-                <label for="msg" class="contact__form-label">Wiadomość</label>
-                <textarea id="msg" class="contact__form-textarea"></textarea>
-                <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
-
-            </form>
-        </div>
-    </section>
-
-
-    <section id="contact" class="contact py-5">
-        <h2>kontakt</h2>
-        <div class="underline"></div>
-        <div class="container">
-            <div class="row text-center contact-us">
-                <div class="col-sm-6 col-lg-4 contact-item order-1">
-                    <h3>główna siedziba</h3>
-                    <p>ul.Krótka 6</p>
-                    <p>59-800 Lubań</p>
-                    <p>+48 758 256 447</p>
-                    <p>mail@mail.com</p>
-                </div>
-                <div class="col-lg-4 order-0 order-lg-1 contact-item ">
-                    <h3>social media</h3>
-                    <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 contact-item order-1">
-                    <h3>siedziba w Pisarzowiczach</h3>
-                    <p>ul.Krótka 6</p>
-                    <p>59-800 Lubań</p>
-                    <p>+48 758 256 447</p>
-                    <p>mail@mail.com</p>
-                </div>
+        <div class="contact__box-right">
+          <div class="contact__box-right-text">Skontaktuj się z nami!</div>
+          <p></p>
+          <form action="#">
+            <div class="contact__box-right-input-box">
+              <input type="text" placeholder="Imię i nazwisko" required>
             </div>
+            <div class="contact__box-right-input-box">
+              <input type="text" placeholder="Adres email" required>
+            </div>
+            <div class="contact__box-right-input-box message-box">
+              <textarea name="message" id="message" class="contact__box-right-input-box message-box"
+                placeholder="Twoja wiadomość" required></textarea>
+            </div>
+
+            <!-- <p class="contact__error">Empty Field!</p> -->
+            <button class="contact__box-right-btn" type="submit">Wyślij</button>
+          </form>
         </div>
-        <div class="contact-shadow"></div>
-    </section>
 
+      </div>
+      <div class="content__map">
 
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.74421615779062!2d19.89305959893186!3d50.08813820328994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1686049578549!5m2!1spl!2spl"
+          width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    </div>
+  </section>
 
+  <!-- @include 'footer.kit' -->
 
-
-
-
-
-
-
-
-    <script src="./dist/js/main.min.js"></script>
+  <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>

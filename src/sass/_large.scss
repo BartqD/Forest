@@ -1,7 +1,6 @@
 @media (min-width: 992px) {
 	.container{
 		justify-content: space-around;
-		position: sticky;
 		.nav-brand {
 			font-size: 5rem;
 			.nav-brand-icon{
@@ -87,8 +86,20 @@
 		}
 	}
 
+.offer{
+	&__card {
+		height: 400px;
+		width: 270px;
+	  }
+	
+}
+.contact {
+	background-image: url('/dist/img/forrest_1920.jpg');
+	
+}
+
+
 	.section-heading {
-		
 		margin-bottom: 1.5em;
 		font-size: 5rem;
 		font-weight: 300;
