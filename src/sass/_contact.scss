@@ -17,6 +17,58 @@
 		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -5;
 	}
+	&__popup {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		top: -300px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		min-width: 300px;
+		height: 200px;
+		background-color: #fff;
+		border-radius: 8px;
+		border: 2px solid black;
+		transition: top 0.5s;
+		p {
+			font-size: 2rem;
+			padding: 0.2em;
+			font-weight: bold;
+		}
+		&-close {
+			display: block;
+			padding: 0.5em 0;
+			margin-left: 0.5em;
+			margin-top: 2em;
+			width: 100px;
+			font-size: 1.5rem;
+			color: c.$white;
+			background-color: c.$dark;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		&-close:hover {
+			background-color: c.$green;
+		}
+	}
+	.error {
+		input,
+		textarea {
+			border: 1px solid red;
+		}
+		.error-text {
+			visibility: visible;
+		}
+	}
+
+	.show-popup {
+		top: 850px;
+	}
 
 	.content {
 		&__map {
@@ -49,9 +101,8 @@
 		&-adress {
 			text-align: center;
 			margin: 0.5em;
-			i {
-				font-size: 2em;
-				color: c.$green;
+			img {
+				width: 2em;
 				margin-bottom: 0.5em;
 			}
 			&-topic {
@@ -74,15 +125,24 @@
 		flex-direction: column;
 		width: 75%;
 		&-text {
-			font-size: 2.5rem;
+			font-size: 1.6rem;
 			font-weight: 600;
 			color: c.$green;
-			margin: 0.5em 0 0.5em;
+			margin: 0.5em 0;
+			text-align: center;
 		}
+
 		&-input-box {
 			display: flex;
+			flex-direction: column;
 			width: 100%;
-			margin: 0.5em 0;
+			.error-text {
+				text-align: center;
+				margin: 5px 0;
+				font-size: 14px;
+				color: rgb(250, 0, 0);
+				visibility: hidden;
+			}
 			input,
 			textarea {
 				height: 4em;
@@ -99,10 +159,11 @@
 				min-width: 100%;
 				max-width: 100%;
 			}
+			.message-box {
+				min-height: 10em;
+			}
 		}
-		.message-box {
-			min-height: 10em;
-		}
+
 		&-btn {
 			padding: 0.5em;
 			width: 100%;

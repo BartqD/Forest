@@ -1,13 +1,12 @@
 @media (min-width: 992px) {
-	.container{
+	.container {
 		justify-content: space-around;
 		.nav-brand {
 			font-size: 5rem;
-			.nav-brand-icon{
+			.nav-brand-icon {
 				width: 50px;
 			}
 		}
-
 		.nav {
 			&-desktop {
 				display: inline-block;
@@ -26,44 +25,41 @@
 				&:hover {
 					color: c.$green;
 				}
-                &--active{
-                    background-color: c.$dark;
-                    color:c.$white
-                }
+				&--active {
+					background-color: c.$dark;
+					color: c.$white;
+				}
 			}
 		}
 		.nav-btn {
 			display: none;
 		}
 	}
-.home{
-	background-image: url('/dist/img/jungle_1920.jpg');
-	
+	.home {
+		background-image: url('/dist/img/jungle_1920.jpg');
+
 		&-text {
 			margin-left: 15em;
-			
+
 			h1 {
 				font-size: 4rem;
 
 				.forest {
 					font-size: 3rem;
-					margin-bottom: .2em;
-					
+					margin-bottom: 0.2em;
 				}
 			}
 		}
-
 	}
-
-.aboutus{
-	&__box {
+	.aboutus {
+		&__box {
 			&-text {
 				width: 100%;
 			}
 			&-img {
 				width: 100%;
 				margin-right: 4em;
-					  }
+			}
 		}
 		&__img {
 			max-height: 500px;
@@ -75,7 +71,7 @@
 			font-size: 2rem;
 			line-height: 1.5;
 		}
-		&-hero{
+		&-hero {
 			background-image: url('/dist/img/girl_1920.jpg');
 			height: 50vh;
 			.hero-text {
@@ -85,37 +81,18 @@
 			}
 		}
 	}
-
-.offer{
-	&__card {
-		height: 400px;
-		width: 270px;
-	  }
-	
-}
-.contact {
-	background-image: url('/dist/img/forrest_1920.jpg');
-	
-}
-
-
+	.offer {
+		&__card {
+			height: 400px;
+			width: 270px;
+		}
+	}
+	.contact {
+		background-image: url('/dist/img/forrest_1920.jpg');
+	}
 	.section-heading {
 		margin-bottom: 1.5em;
 		font-size: 5rem;
 		font-weight: 300;
-	
 	}
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
