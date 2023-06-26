@@ -1,0 +1,103 @@
+@use './colors' as c;
+
+// ---------------
+// ANIMATION
+// ---------------
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.offer2 {
+	position: relative;
+	width: 100%;
+	background-image: url('/dist/img/bridge_640.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 10;
+	.section-heading{
+		margin: 1em;
+	}
+	&-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.6);
+		z-index: -5;
+	}
+	&__option {
+		margin: 2em 0;
+		width: 100%;
+		box-shadow: 0 1px 5px 2px c.$light-white;
+		background-color: c.$white;
+
+		hr {
+			width: 80%;
+			height: 2px;
+			border-radius: 4px;
+			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background-size: 400% 400%;
+			animation: gradient 10s ease infinite;
+		}
+		&-img {
+			width: 100%;
+			height: auto;
+			&--right {
+				order: 1;
+			}
+		}
+		&-info {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: column;
+			&-heading {
+				margin-top: 1em;
+			}
+			&-price {
+				padding: 0.5em 0;
+				font-weight: bold;
+				color: c.$dark;
+				letter-spacing: 1px;
+			}
+			&-text {
+				padding: 1em;
+				text-align: center;
+			}
+
+			&-btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 40%;
+				padding: 1em;
+				margin-bottom: 0.5em;
+				border: none;
+				cursor: pointer;
+				font-size: 1.8rem;
+				font-weight: bold;
+				letter-spacing: 1px;
+				
+				background-color: c.$white;
+				box-shadow: 0 1px 5px 2px c.$light-white;
+				transition: background-color 0.3s;
+			}
+			&-btn:hover {
+				background-color: c.$green;
+			}
+		}
+		&-heading {
+			margin-bottom: 0.5em;
+			font-size: 3.6em;
+		}
+	}
+}

@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+	// ---------------
+	// HOME - SECTION
+	// ---------------
 	.home {
 		&-text {
 			margin-left: 5em;
@@ -12,6 +15,9 @@
 			}
 		}
 	}
+	// ---------------
+	// ABOUTUS - SECTION
+	// ---------------
 	.aboutus {
 		&__box {
 			&-text {
@@ -36,11 +42,9 @@
 			font-size: 1.5rem;
 		}
 	}
-	.section-heading {
-		font-size: 5rem;
-		margin-bottom: 0.5em;
-	}
-
+	// ---------------
+	// OFFER - SECTION
+	// ---------------
 	.offer {
 		&__info {
 			font-size: 1.8rem;
@@ -51,6 +55,20 @@
 			margin-top: 1em;
 		}
 	}
+	.offer2 {
+		background-image: url('/dist/img/bridge_1920.jpg');
+		&__option {
+			display: flex;
+			&-info {
+				&-btn {
+					width: 30%;
+				}
+			}
+		}
+	}
+	// ---------------
+	// CONTACT - SECTION
+	// ---------------
 	.contact {
 		.content {
 			.section-heading {
@@ -92,33 +110,23 @@
 		.show-popup {
 			top: 550px;
 		}
-		.footer {
-			&__boxes {
-				display: flex;
-				justify-content: space-between;
-			}
-			&__box-desktop {
-				display: block;
-			}
+	}
+	// ---------------
+	// FOOTER
+	// ---------------
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__box-desktop {
+			display: block;
+		}
 
-			&__box {
-				width: 25%;
-				&:first-child {
-					width: 70%;
-				}
-				&-brand {
-					font-size: 5rem;
-				}
-				&-brand-icon {
-					width: 5rem;
-				}
-			}
-			&__box-title {
-				font-size: 2.4rem;
-				margin-bottom: 1em;
-			}
-			&__box-list {
-				list-style: none;
+		&__box {
+			width: 25%;
+			&:first-child {
+				width: 70%;
 			}
 			&-brand {
 				font-size: 5rem;
@@ -126,17 +134,37 @@
 			&-brand-icon {
 				width: 5rem;
 			}
-			&__box-brand-text {
-				display: none;
-			}
+		}
+		&__box-title {
+			font-size: 2.4rem;
+			margin-bottom: 1em;
+		}
+		&__box-list {
+			list-style: none;
+		}
+		&-brand {
+			font-size: 5rem;
+		}
+		&-brand-icon {
+			width: 5rem;
+		}
+		&__box-brand-text {
+			display: none;
+		}
 
-			&__box-list-item {
-				margin-bottom: 1em;
-				a {
-					color: c.$text;
-					text-decoration: none;
-				}
+		&__box-list-item {
+			margin-bottom: 1em;
+			a {
+				color: c.$text;
+				text-decoration: none;
 			}
 		}
+	}
+	// ---------------
+	// OTHER
+	// ---------------
+	.section-heading {
+		font-size: 5rem;
+		margin-bottom: 0.5em;
 	}
 }
